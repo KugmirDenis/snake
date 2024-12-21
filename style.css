@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    left: 400px;
+    background-color: #333333;
+}
+
+.board-game {
+    width: 250px;
+    height: 250px;
+    background-color: #026602;
+    display: grid;
+    border: 3px solid #FF6600;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+}
+
+.board-game .food {
+    background: #ff0000;
+    border-radius: 50%;
+}
+
+.board-game .head {
+    background: #FF6600;
+    align-items: center;
+}
+
+.controls {
+    display: none;
+    justify-content: space-between;
+} 
+
+.controls i{
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: red;
+    width: calc(100%/4);
+    cursor: pointer;
+    border-right: 1px solid black;
+}
+
+.score-point {
+    color: #FF6600;
+    border: 3px solid #FF6600;
+    border-bottom: none;
+    width: 250px;
+    height: 20px;
+    background-color: #333333;
+    font-weight: 500;
+}
+
+.point {
+    color: #FF6600;
+    font-weight: 500;
+}
